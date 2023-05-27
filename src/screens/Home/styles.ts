@@ -19,5 +19,7 @@ export const styles = StyleSheet.create({
         marginTop: 25,
         padding: 10,
         marginBottom: 20,
+        alignItems: "center",
+        justifyContent: "space-between",
     }
 });
