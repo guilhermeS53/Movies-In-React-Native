@@ -1,8 +1,8 @@
-// Learn more https://docs.expo.io/guides/customizing-metro
-const { getDefaultConfig } = require('expo/metro-config');
+const { getDefaultConfig } = require("expo/metro-config");
 
 module.exports = (() => {
     const config = getDefaultConfig(__dirname);
+
     const { transformer, resolver } = config;
 
     config.transformer = {
@@ -11,12 +11,9 @@ module.exports = (() => {
     };
     config.resolver = {
         ...resolver,
-        assetExts: resolver.assetExts.filter((ext) => ext != "svg"),
+        assetExts: resolver.assetExts.filter((ext) => ext !== "svg"),
         sourceExts: [...resolver.sourceExts, "svg"],
     };
 
     return config;
-}
-)();
-
-
+})();
