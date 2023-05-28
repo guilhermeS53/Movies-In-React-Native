@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
         backgroundColor: '#242A32',
     },
     headerContent: {
-        padding: 28,
+        padding: 20,
     },
     headerText: {
         marginTop: 30,
@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
     },
     containerInput: {
         backgroundColor: "#67686D",
-        height: 40,
+        height: 35,
         borderRadius: 18,
         marginTop: 20,
         paddingHorizontal: 10,
@@ -29,7 +29,7 @@ export const styles = StyleSheet.create({
     input: {
         flex: 1,
         color: "#FFF",
-        width: "80%",
+        width: "60%",
         paddingLeft: 16,
     }
 });
