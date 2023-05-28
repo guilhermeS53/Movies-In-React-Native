@@ -19,22 +19,29 @@ export function Home() {
     const [page, setPage] = useState(1);
     const [loading, setLoading] = useState(false);
     const [search, setSearch] = useState("");
+    const [reachedEnd, setReachedEnd] = useState(false);
 
     useEffect(() => {
         loadingMoreData();
     }, []);
 
     const loadingMoreData = async () => {
-        setLoading(true)
-        const response = await api.get("/movie/popular", {
-            params: {
-                page,
-            },
-        });
+        if (!loading && !reachedEnd) {
+            setLoading(true);
+            const response = await api.get("/movie/popular", {
+                params: {
+                    page,
+                },
+            });
 
-        setDiscoverMovies([...discoverMovies, ...response.data.results]);
-        setPage(page + 1);
-        setLoading(false);
+            if (response.data.results.length === 0) {
+                setReachedEnd(true);
+            } else {
+                setDiscoverMovies([...discoverMovies, ...response.data.results]);
+                setPage(page + 1);
+            }
+            setLoading(false);
+        }
     };
 
     const searchMovies = async (query: string) => {
@@ -46,11 +53,11 @@ export function Home() {
         });
 
         if (response.data.results.length === 0) {
-            setNoResult(true)
+            setNoResult(true);
         } else {
             setSearchResultMovies(response.data.results);
         }
-        setLoading(true);
+        setLoading(false);
     };
 
     const handleSearch = (text: string) => {

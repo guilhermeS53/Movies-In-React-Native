@@ -1,5 +1,5 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import api from "../../services/api";
+import api from "../services/api";
 import { createContext, ReactNode, useCallback, useEffect, useMemo, useState } from "react";
 import axios from "axios";
 
@@ -78,7 +78,7 @@ export const MovieProvider = ({ children }: MovieProviderProps) => {
                 favoriteMovies.map(async (movieId: number) => {
                     const response = await axios.get<Movie>(`https://api.themoviedb.org/3/movie/${movieId}`, {
                         params: {
-                            api_key: "a045d25ff1232597014a170c0a94b109",
+                            api_key: "4c9551e8bdc45cf7327e384cbcbdcb1f",
                             language: "pt-BR",
                         },
                     });

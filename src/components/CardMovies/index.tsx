@@ -1,4 +1,4 @@
-import { View, Text, Pressable, Image } from "react-native";
+import { Pressable, Image } from "react-native";
 import { styles } from "./styles";
 
 interface Movie {
