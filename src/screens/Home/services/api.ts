@@ -1,4 +1,4 @@
-import axios from 'axios'
+import axios from "axios";
 
 export const api = axios.create({
     baseURL: "https://api.themoviedb.org/3",
@@ -7,4 +7,4 @@ export const api = axios.create({
         language: "pt-BR",
         include_adult: false,
     },
-})
+});

@@ -6,14 +6,13 @@ export const styles = StyleSheet.create({
         width: 100,
         height: 145,
         borderRadius: 18,
-
     },
     cardMovies: {
         width: 100,
         height: 145,
         borderRadius: 18,
-        marginHorizontal: 6,
+        marginHorizontal: 5,
         marginBottom: 10,
-        backgroundColor: "#424242"
+        backgroundColor: "#424242",
     },
 })

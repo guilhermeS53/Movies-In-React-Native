@@ -16,8 +16,8 @@ export function CardMovies({ data, ...rest }: Props) {
         <Pressable {...rest} style={styles.cardMovies}>
             <Image source={{
                 uri: `https://image.tmdb.org/t/p/w500${data.poster_path}`,
-            }
-            } style={styles.cardImage}
+            }}
+                style={styles.cardImage}
             />
         </Pressable>
     );
