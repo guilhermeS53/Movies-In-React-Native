@@ -31,5 +31,15 @@ export const styles = StyleSheet.create({
         color: "#FFF",
         width: "60%",
         paddingLeft: 16,
+    },
+    noResult: {
+        color: "#FFF",
+        fontSize: 18,
+        textAlign: "center",
+        marginVertical: 10,
+    },
+    flatList: {
+        alignItems: "center",
+        justifyContent: "center",
     }
 });

@@ -75,12 +75,14 @@ export function Home() {
                         value={search}
                         onChangeText={handleSearch}
                     />
-
                     <MagnifyingGlass color="#FFF" size={25} weight="light" />
                 </View>
+
+                {noResult && (
+                    <Text style={styles.noResult}>Nenhum filme encontrado por "{search}"</Text>)}
             </View>
 
-            <View>
+            <View style={styles.flatList}>
                 <FlatList
                     data={movieData}
                     numColumns={3}
