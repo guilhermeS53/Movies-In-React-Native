@@ -2,8 +2,8 @@ import { View, Text, TextInput, FlatList, ActivityIndicator, StyleSheet } from "
 import { styles } from "./styles";
 import { MagnifyingGlass } from "phosphor-react-native";
 import { useEffect, useState } from "react";
-import { api } from "./services/api";
-import { CardMovies } from "./components/CardMovies";
+import api from "../../services/api";
+import { CardMovies } from "../../components/CardMovies";
 
 interface Movie {
     id: number;
