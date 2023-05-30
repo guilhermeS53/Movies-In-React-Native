@@ -1,5 +1,6 @@
 import { Pressable, Image } from "react-native";
 import { styles } from "./styles";
+import { useNavigation } from "@react-navigation/native";
 
 interface Movie {
     id: number;
