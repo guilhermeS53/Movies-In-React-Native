@@ -32,7 +32,7 @@ export function Details() {
 
     const route = useRoute();
     const { movieId } = route.params as RouterProps;
-    const { goBack } = useNavigation();
+    const navigation = useNavigation();
 
     useEffect(() => {
         const fetchMovieDetails = async () => {
@@ -72,7 +72,7 @@ export function Details() {
     return (
         <View style={styles.container}>
             <View style={styles.header}>
-                <TouchableOpacity onPress={() => goBack()}>
+                <TouchableOpacity onPress={() => navigation.goBack()}>
                     <CaretLeft color="#fff" size={32} weight="thin" />
                 </TouchableOpacity>
                 <Text style={styles.headerText}>Detalhes</Text>
@@ -143,7 +143,7 @@ export function Details() {
                     <View style={styles.about}>
                         <Text style={styles.aboutText}>
                             {movieDetails.overview === ""
-                                ? "Ops! Parece que esse filme ainda não tem sinopse :-("
+                                ? "Epa! Parece que esse filme ainda não tem sinopse :-("
                                 : movieDetails.overview}
                         </Text>
                     </View>
