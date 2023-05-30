@@ -15,6 +15,7 @@ export const styles = StyleSheet.create({
         lineHeight: 40,
         color: "#FFF",
         textAlign: "center",
+        fontWeight: "bold",
     },
     containerInput: {
         backgroundColor: "#67686D",
