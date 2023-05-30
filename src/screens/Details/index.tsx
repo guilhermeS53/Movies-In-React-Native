@@ -4,6 +4,8 @@ import { useContext, useEffect, useState } from "react";
 import { ActivityIndicator, Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { MovieContext } from "../../context/MoviesContext";
 import api from "../../services/api";
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 import { styles } from "./styles";
 
 type MovieDetails = {
