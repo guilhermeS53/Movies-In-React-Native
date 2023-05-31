@@ -44,14 +44,14 @@ export function Search() {
                 <TouchableOpacity onPress={() => goBack()}>
                     <CaretLeft color="#fff" size={32} weight="thin" />
                 </TouchableOpacity>
-                <Text style={styles.headerText}>Buscar filmes</Text>
+                <Text style={styles.headerText}>Pesquise por filmes</Text>
                 <WarningCircle color="#fff" size={32} weight="thin" />
             </View>
             <View style={styles.content}>
                 <View style={styles.containerInput}>
                     <TextInput
                         style={styles.input}
-                        placeholder="Buscar"
+                        placeholder="O que você está procurando?"
                         placeholderTextColor="#fff"
                         onChangeText={handleSearch}
                         value={searchText}

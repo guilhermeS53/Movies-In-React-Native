@@ -23,7 +23,7 @@ export function MyList() {
                 <TouchableOpacity onPress={() => goBack()}>
                     <CaretLeft color="#fff" size={32} weight="thin" />
                 </TouchableOpacity>
-                <Text style={styles.headerText}>Minha Lista</Text>
+                <Text style={styles.headerText}>Favoritos</Text>
                 <View
                     style={{
                         width: 30,
@@ -93,7 +93,7 @@ export function MyList() {
                 <View style={styles.moviesEmpty}>
                     <Image style={styles.moviesEmptyImage} source={folder} />
                     <Text style={styles.moviesEmptyTitle}>
-                        Ainda não há filmes na lista
+                        Ainda não há filmes em seus favoritos
                     </Text>
                     <Text style={styles.moviesEmptyText}>
                         Encontre o seu filme favorito para adicionar na lista

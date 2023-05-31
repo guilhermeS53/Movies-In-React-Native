@@ -75,7 +75,7 @@ export function Details() {
                 <TouchableOpacity onPress={() => navigation.goBack()}>
                     <CaretLeft color="#fff" size={32} weight="thin" />
                 </TouchableOpacity>
-                <Text style={styles.headerText}>Detalhes</Text>
+                <Text style={styles.headerText}>Detalhes do Filme</Text>
                 <TouchableOpacity onPress={toggleFavoriteMovie}>
                     <BookmarkSimple
                         color="#fff"
@@ -143,7 +143,7 @@ export function Details() {
                     <View style={styles.about}>
                         <Text style={styles.aboutText}>
                             {movieDetails.overview === ""
-                                ? "Epa! Parece que esse filme ainda não tem sinopse :-("
+                                ? "Epa! Parece que esse filme ainda não tem sinopse :("
                                 : movieDetails.overview}
                         </Text>
                     </View>
