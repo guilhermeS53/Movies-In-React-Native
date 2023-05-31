@@ -13,11 +13,18 @@ interface Props {
 }
 
 export function CardMovies({ data, ...rest }: Props) {
+    const navigation = useNavigation();
+
+    const handlePress = () => {
+        navigation.navigate("Details", { movieId: data.id });
+    };
+
     return (
-        <Pressable {...rest} style={styles.cardMovies}>
-            <Image source={{
-                uri: `https://image.tmdb.org/t/p/w500${data.poster_path}`,
-            }}
+        <Pressable {...rest} style={styles.cardMovies} onPress={handlePress}>
+            <Image
+                source={{
+                    uri: `https://image.tmdb.org/t/p/w500${data.poster_path}`,
+                }}
                 style={styles.cardImage}
             />
         </Pressable>

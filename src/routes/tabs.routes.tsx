@@ -1,5 +1,4 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-
 import { Home } from "../screens/Home";
 import { BookmarkSimple, House, MagnifyingGlass } from "phosphor-react-native";
 import { Details } from "../screens/Details";
