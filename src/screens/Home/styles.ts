@@ -7,10 +7,10 @@ export const styles = StyleSheet.create({
         overflow: "scroll",
     },
     headerContent: {
-        padding: 20,
+        padding: 25,
     },
     headerText: {
-        marginTop: 30,
+        marginTop: 5,
         fontSize: 25,
         lineHeight: 40,
         color: "#FFF",
