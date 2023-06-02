@@ -12,18 +12,18 @@ export const styles = StyleSheet.create({
     headerText: {
         marginTop: 5,
         fontSize: 25,
-        lineHeight: 40,
+        lineHeight: 30,
         color: "#FFF",
         textAlign: "center",
         fontWeight: "bold",
     },
     containerInput: {
         backgroundColor: "#67686D",
-        height: 35,
-        borderRadius: 18,
+        height: 36,
+        borderRadius: 16,
         marginTop: 20,
         paddingHorizontal: 10,
-        marginBottom: 20,
+        marginBottom: 0,
         alignItems: "center",
         justifyContent: "space-between",
         flexDirection: "row",
@@ -31,8 +31,8 @@ export const styles = StyleSheet.create({
     input: {
         flex: 1,
         color: "#FFF",
-        width: "60%",
-        paddingLeft: 16,
+        width: "50%",
+        paddingLeft: 10,
     },
     noResult: {
         color: "#FFF",
