@@ -82,6 +82,7 @@ export function Home() {
                         placeholder="Pesquisar" style={styles.input}
                         value={search}
                         onChangeText={handleSearch}
+                        selectionColor="transparent"
                     />
                     <MagnifyingGlass color="#FFF" size={25} weight="light" />
                 </View>

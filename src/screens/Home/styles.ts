@@ -4,13 +4,12 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#242A32',
-        overflow: "scroll",
+        paddingHorizontal: 10,
     },
     headerContent: {
-        padding: 25,
+        paddingVertical: 25,
     },
     headerText: {
-        marginTop: 5,
         fontSize: 25,
         lineHeight: 30,
         color: "#FFF",
@@ -23,16 +22,15 @@ export const styles = StyleSheet.create({
         borderRadius: 16,
         marginTop: 20,
         paddingHorizontal: 10,
-        marginBottom: 0,
+        marginBottom: -25,
+        flexDirection: "row",
         alignItems: "center",
         justifyContent: "space-between",
-        flexDirection: "row",
     },
     input: {
         flex: 1,
         color: "#FFF",
-        width: "50%",
-        paddingLeft: 10,
+        paddingHorizontal: 10,
     },
     noResult: {
         color: "#FFF",
@@ -41,7 +39,11 @@ export const styles = StyleSheet.create({
         marginVertical: 10,
     },
     flatList: {
-        alignItems: "center",
-        justifyContent: "center",
-    }
+        flex: 1,
+    },
+    flatListContent: {
+        alignSelf: 'center',
+        paddingVertical: 30,
+        paddingHorizontal: 5,
+    },
 });
