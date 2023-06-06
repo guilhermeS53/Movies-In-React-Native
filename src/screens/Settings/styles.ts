@@ -15,11 +15,11 @@ export const styles = StyleSheet.create({
     option: {
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'space-between',
         marginBottom: 10,
     },
     optionText: {
         color: '#FFF',
         fontSize: 16,
+        marginLeft: 10,
     },
 });

@@ -60,7 +60,7 @@ export function Settings() {
                 />
                 <Text style={styles.optionText}>Habilitar Atualizações de Novos Filmes por E-mail</Text>
             </View>
-            <Button title="Salvar Configuração" onPress={saveSettings} />
+            <Button title="Salvar Configuração" onPress={saveSettings} color="#3A3F47" />
         </View>
     );
 }
