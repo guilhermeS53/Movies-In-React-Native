@@ -7,7 +7,8 @@ import { Home } from './src/screens/Home';
 import { MyList } from './src/screens/MyList';
 import { Search } from './src/screens/Search';
 import { Details } from './src/screens/Details';
-import { House, BookmarkSimple, MagnifyingGlass } from "phosphor-react-native";
+import { Settings } from './src/screens/Settings';
+import { House, BookmarkSimple, MagnifyingGlass, Gear } from "phosphor-react-native";
 
 const Tab = createBottomTabNavigator();
 
@@ -60,6 +61,15 @@ export default function App() {
             options={{
               tabBarIcon: ({ color }) => (
                 <MagnifyingGlass color={color} size={30} weight="light" />
+              ),
+            }}
+          />
+          <Tab.Screen
+            name="Settings"
+            component={Settings}
+            options={{
+              tabBarIcon: ({ color }) => (
+                <Gear color={color} size={30} weight="light" />
               ),
             }}
           />
