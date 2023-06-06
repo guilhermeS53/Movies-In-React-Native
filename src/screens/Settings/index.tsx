@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, Switch, CheckBox, Button } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useColorScheme } from 'react-native';
 import { styles } from "./styles";
 
 export function Settings() {
     const [darkMode, setDarkMode] = useState(false);
     const [notifications, setNotifications] = useState(false);
     const [emailUpdates, setEmailUpdates] = useState(false);
+    const colorScheme = useColorScheme();
 
     useEffect(() => {
         loadSettings();
